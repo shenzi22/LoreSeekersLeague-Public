@@ -54,7 +54,7 @@ if not TOKEN:
 
 # Only this Discord role has administrative access.
 # Old DISCORD_ALLOWED_ROLE_IDS values are intentionally ignored.
-ADMIN_ROLE_ID = 1501336509759098977
+ADMIN_ROLE_ID = int(os.getenv("DISCORD_ADMIN_ROLE_ID", "0"))
 
 LEADERBOARD_CACHE_SECONDS = 30.0
 PACIFIC_TIME = ZoneInfo("America/Los_Angeles")
